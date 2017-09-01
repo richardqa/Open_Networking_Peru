@@ -1,0 +1,25 @@
+# XML Configuration for Reverse Ping
+
+curl -u admin:admin -X PUT –H "Content-Type: application/xml" http://localhost:8181/restconf/config/opendaylight-inventory:nodes/node/openflow:1/flow-node-inventory:table/0/flow/Dummy_reverse
+
+<flow xmlns="urn:opendaylight:flow:inventory">
+	<id>Dummy_reverse</id>
+	<flow-name>Dummy_reverse</flow-name>
+	<table_id>0</table_id>
+	<match>
+		<in-port>2</in-port>
+	</match>
+	<instructions>
+		<instruction>
+			<order>0</order>
+			<apply-actions>
+				<action>
+					<order>0</order>
+					<output-action>
+						<output-node-connector>1</output-node-connector>
+					</output-action>
+				</action>
+			</apply-actions>
+		</instruction>
+	</instructions>
+</flow>

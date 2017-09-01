@@ -1,0 +1,6 @@
+#XML Configuration for Reverse Ping
+
+curl -u admin:admin -X DELETE –H "Content-Type: application/xml" http://localhost:8181/restconf/config/opendaylight-inventory:nodes/node/openflow:1/flow-node-inventory:table/0/flow/Dummy_forward
+
+curl -u admin:admin -X DELETE –H "Content-Type: application/xml" http://localhost:8181/restconf/config/opendaylight-inventory:nodes/node/openflow:1/flow-node-inventory:table/0/flow/Dummy_reverse
+

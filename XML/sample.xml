@@ -1,0 +1,32 @@
+<flow xmlns="urn:opendaylight:flow:inventory"> 
+	<strict>false</strict> 
+	<instructions> 
+		<instruction> 
+			<order>0</order> 
+			<apply-actions> 
+				<action> 
+					<order>0</order> 
+					<drop-action/> 
+				</action> 
+			</apply-actions> 
+		</instruction> 
+	</instructions> 
+
+	<table_id>0</table_id> 
+	<id>1</id> 
+	<cookie_mask>255</cookie_mask> 
+	<installHw>false</installHw> 
+	<match> 
+		<ethernet-match> 
+			<ethernet-destination> 
+				<address>00:00:00:00:00:02</address> 
+			</ethernet-destination> 
+		</ethernet-match> 
+		<in-port>1</in-port> 
+	</match> 
+	<hard-timeout>10</hard-timeout> 
+	<cookie>4</cookie> 
+	<idle-timeout>20</idle-timeout> 
+	<flow-name>sampleflow1</flow-name> 
+	<barrier>false</barrier> 
+</flow>
