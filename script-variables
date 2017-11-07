@@ -1,0 +1,8 @@
+export control=~/SDNLab/distribution/opendaylight-karaf/target/assembly/bin/
+export learn=~/SDNLab/learning-switch/implementation/src/main/java/org/sdnhub/odl/tutorial/learningswitch/impl/
+export tapapp=~/SDNLab/tapapp/implementation/src/main/java/org/sdnhub/odl/tutorial/tapapp/impl/
+export deploy=~/SDNLab/distribution/opendaylight-karaf/target/assembly/deploy
+export target1=~/SDNLab/learning-switch/implementation/target
+export target2=~/SDNLab/tapapp/implementation/target 
+export program1=~/SDNLab/learning-switch
+export program2=~/SDNLab/tapapp
