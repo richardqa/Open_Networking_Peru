@@ -6,3 +6,4 @@ export target1=~/SDNLab/learning-switch/implementation/target
 export target2=~/SDNLab/tapapp/implementation/target 
 export program1=~/SDNLab/learning-switch
 export program2=~/SDNLab/tapapp
+export PATH=/usr/local/apache-maven-3.5.0/bin:$PATH
