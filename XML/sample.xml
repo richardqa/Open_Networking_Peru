@@ -24,9 +24,10 @@
 		</ethernet-match> 
 		<in-port>1</in-port> 
 	</match> 
-	<hard-timeout>10</hard-timeout> 
+	<hard-timeout>60</hard-timeout> 
 	<cookie>4</cookie> 
-	<idle-timeout>20</idle-timeout> 
+	<idle-timeout>60</idle-timeout>
+        <priority>12</priority> 
 	<flow-name>sampleflow1</flow-name> 
 	<barrier>false</barrier> 
 </flow>
